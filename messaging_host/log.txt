@@ -1,0 +1,2784 @@
+
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 19
+Message received - {"text":"00722783"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 19
+Message received - {"text":"00722783"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 19
+Message received - {"text":"00722783"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+An exceptional thing happened - name 'ticketNum' is not defined
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+An exceptional thing happened - name 'ticketNum' is not defined
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+An exceptional thing happened - name 'ticketNum' is not defined
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+An exceptional thing happened - name 'os' is not defined
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00721083"}
+Ticket: 00721083
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722783"}
+Ticket: 00722783
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00724898"}
+Ticket: 00724898
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00724532"}
+Ticket: 00724532
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00724532"}
+Ticket: 00724532
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00715470"}
+Ticket: 00715470
+text_length == 24
+Message received - {"ticketNum":"00715470"}
+Ticket: 00715470
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00715470"}
+Ticket: 00715470
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00724671"}
+Ticket: 00724671
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00724671"}
+Ticket: 00724671
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00724898"}
+Ticket: 00724898
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00724939"}
+Ticket: 00724939
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00724671"}
+Ticket: 00724671
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725179"}
+Ticket: 00725179
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725216"}
+Ticket: 00725216
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00673742"}
+Ticket: 00673742
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725342"}
+Ticket: 00725342
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00724898"}
+Ticket: 00724898
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725298"}
+Ticket: 00725298
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725573"}
+Ticket: 00725573
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725593"}
+Ticket: 00725593
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00721164"}
+Ticket: 00721164
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00724671"}
+Ticket: 00724671
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00719944"}
+Ticket: 00719944
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00724898"}
+Ticket: 00724898
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725298"}
+Ticket: 00725298
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00719644"}
+Ticket: 00719644
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726733"}
+Ticket: 00726733
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726761"}
+Ticket: 00726761
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726535"}
+Ticket: 00726535
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726733"}
+Ticket: 00726733
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00723125"}
+Ticket: 00723125
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00683508"}
+Ticket: 00683508
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00683508"}
+Ticket: 00683508
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726733"}
+Ticket: 00726733
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726535"}
+Ticket: 00726535
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727362"}
+Ticket: 00727362
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727006"}
+Ticket: 00727006
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727402"}
+Ticket: 00727402
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727466"}
+Ticket: 00727466
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727324"}
+Ticket: 00727324
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727469"}
+Ticket: 00727469
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725723"}
+Ticket: 00725723
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727478"}
+Ticket: 00727478
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727478"}
+Ticket: 00727478
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727324"}
+Ticket: 00727324
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725298"}
+Ticket: 00725298
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727906"}
+Ticket: 00727906
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726733"}
+Ticket: 00726733
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725298"}
+Ticket: 00725298
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727906"}
+Ticket: 00727906
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726733"}
+Ticket: 00726733
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00728309"}
+Ticket: 00728309
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727906"}
+Ticket: 00727906
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727369"}
+Ticket: 00727369
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727906"}
+Ticket: 00727906
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00722731"}
+Ticket: 00722731
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00728818"}
+Ticket: 00728818
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726733"}
+Ticket: 00726733
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726733"}
+Ticket: 00726733
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726733"}
+Ticket: 00726733
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 20
+Message received - {"ticketNum":"null"}
+Ticket: null
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727946"}
+Ticket: 00727946
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727369"}
+Ticket: 00727369
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726733"}
+Ticket: 00726733
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727362"}
+Ticket: 00727362
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727362"}
+Ticket: 00727362
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00726733"}
+Ticket: 00726733
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00729193"}
+Ticket: 00729193
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00729226"}
+Ticket: 00729226
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00729248"}
+Ticket: 00729248
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00729248"}
+Ticket: 00729248
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00729248"}
+Ticket: 00729248
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00728818"}
+Ticket: 00728818
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00683508"}
+Ticket: 00683508
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00714506"}
+Ticket: 00714506
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00673742"}
+Ticket: 00673742
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00729468"}
+Ticket: 00729468
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00727362"}
+Ticket: 00727362
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00728818"}
+Ticket: 00728818
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00729193"}
+Ticket: 00729193
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00683508"}
+Ticket: 00683508
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00730583"}
+Ticket: 00730583
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00730601"}
+Ticket: 00730601
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00728818"}
+Ticket: 00728818
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00683508"}
+Ticket: 00683508
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00730669"}
+Ticket: 00730669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00730669"}
+Ticket: 00730669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731070"}
+Ticket: 00731070
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00730669"}
+Ticket: 00730669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00683508"}
+Ticket: 00683508
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731436"}
+Ticket: 00731436
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731438"}
+Ticket: 00731438
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731480"}
+Ticket: 00731480
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731482"}
+Ticket: 00731482
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731468"}
+Ticket: 00731468
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 20
+Message received - {"ticketNum":"null"}
+Ticket: null
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00683508"}
+Ticket: 00683508
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731436"}
+Ticket: 00731436
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731070"}
+Ticket: 00731070
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731436"}
+Ticket: 00731436
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731482"}
+Ticket: 00731482
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731482"}
+Ticket: 00731482
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00683508"}
+Ticket: 00683508
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731482"}
+Ticket: 00731482
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00732548"}
+Ticket: 00732548
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00732548"}
+Ticket: 00732548
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00732549"}
+Ticket: 00732549
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00732549"}
+Ticket: 00732549
+text_length == 24
+Message received - {"ticketNum":"00732549"}
+Ticket: 00732549
+text_length == 24
+Message received - {"ticketNum":"00732549"}
+Ticket: 00732549
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00732549"}
+Ticket: 00732549
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00732550"}
+Ticket: 00732550
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00732548"}
+Ticket: 00732548
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00732821"}
+Ticket: 00732821
+text_length == 24
+Message received - {"ticketNum":"00732821"}
+Ticket: 00732821
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00731482"}
+Ticket: 00731482
+text_length == 24
+Message received - {"ticketNum":"00731482"}
+Ticket: 00731482
+text_length == 24
+Message received - {"ticketNum":"00731482"}
+Ticket: 00731482
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00733338"}
+Ticket: 00733338
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734078"}
+Ticket: 00734078
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734089"}
+Ticket: 00734089
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734122"}
+Ticket: 00734122
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725179"}
+Ticket: 00725179
+text_length == 24
+Message received - {"ticketNum":"00725179"}
+Ticket: 00725179
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725940"}
+Ticket: 00725940
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00725179"}
+Ticket: 00725179
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734078"}
+Ticket: 00734078
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734443"}
+Ticket: 00734443
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734457"}
+Ticket: 00734457
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734159"}
+Ticket: 00734159
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734467"}
+Ticket: 00734467
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734480"}
+Ticket: 00734480
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734424"}
+Ticket: 00734424
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00719189"}
+Ticket: 00719189
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734089"}
+Ticket: 00734089
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734078"}
+Ticket: 00734078
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734731"}
+Ticket: 00734731
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734731"}
+Ticket: 00734731
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734122"}
+Ticket: 00734122
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734731"}
+Ticket: 00734731
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734089"}
+Ticket: 00734089
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735149"}
+Ticket: 00735149
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735159"}
+Ticket: 00735159
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735031"}
+Ticket: 00735031
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735087"}
+Ticket: 00735087
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735104"}
+Ticket: 00735104
+text_length == 24
+Message received - {"ticketNum":"00735104"}
+Ticket: 00735104
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735104"}
+Ticket: 00735104
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735175"}
+Ticket: 00735175
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735176"}
+Ticket: 00735176
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735447"}
+Ticket: 00735447
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735100"}
+Ticket: 00735100
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734089"}
+Ticket: 00734089
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735567"}
+Ticket: 00735567
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735087"}
+Ticket: 00735087
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734986"}
+Ticket: 00734986
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735935"}
+Ticket: 00735935
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735100"}
+Ticket: 00735100
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735935"}
+Ticket: 00735935
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735104"}
+Ticket: 00735104
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735104"}
+Ticket: 00735104
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735567"}
+Ticket: 00735567
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00736604"}
+Ticket: 00736604
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735935"}
+Ticket: 00735935
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735104"}
+Ticket: 00735104
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00683508"}
+Ticket: 00683508
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735935"}
+Ticket: 00735935
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00719189"}
+Ticket: 00719189
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737053"}
+Ticket: 00737053
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737053"}
+Ticket: 00737053
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00736604"}
+Ticket: 00736604
+text_length == 24
+Message received - {"ticketNum":"00736604"}
+Ticket: 00736604
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735745"}
+Ticket: 00735745
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735745"}
+Ticket: 00735745
+text_length == 24
+Message received - {"ticketNum":"00735745"}
+Ticket: 00735745
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735745"}
+Ticket: 00735745
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735745"}
+Ticket: 00735745
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737416"}
+Ticket: 00737416
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737416"}
+Ticket: 00737416
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737139"}
+Ticket: 00737139
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735935"}
+Ticket: 00735935
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737139"}
+Ticket: 00737139
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00735935"}
+Ticket: 00735935
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737416"}
+Ticket: 00737416
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737139"}
+Ticket: 00737139
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737234"}
+Ticket: 00737234
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00673742"}
+Ticket: 00673742
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737858"}
+Ticket: 00737858
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00683508"}
+Ticket: 00683508
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737772"}
+Ticket: 00737772
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737845"}
+Ticket: 00737845
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738182"}
+Ticket: 00738182
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737772"}
+Ticket: 00737772
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738263"}
+Ticket: 00738263
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738263"}
+Ticket: 00738263
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737772"}
+Ticket: 00737772
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738539"}
+Ticket: 00738539
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738539"}
+Ticket: 00738539
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738539"}
+Ticket: 00738539
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738539"}
+Ticket: 00738539
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738597"}
+Ticket: 00738597
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738539"}
+Ticket: 00738539
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734078"}
+Ticket: 00734078
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738992"}
+Ticket: 00738992
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734078"}
+Ticket: 00734078
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00739031"}
+Ticket: 00739031
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738182"}
+Ticket: 00738182
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737234"}
+Ticket: 00737234
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00739031"}
+Ticket: 00739031
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00739465"}
+Ticket: 00739465
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00739421"}
+Ticket: 00739421
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738992"}
+Ticket: 00738992
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737772"}
+Ticket: 00737772
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00673742"}
+Ticket: 00673742
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00683508"}
+Ticket: 00683508
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00734078"}
+Ticket: 00734078
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00739465"}
+Ticket: 00739465
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00740243"}
+Ticket: 00740243
+text_length == 24
+Message received - {"ticketNum":"00740243"}
+Ticket: 00740243
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00740384"}
+Ticket: 00740384
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00740389"}
+Ticket: 00740389
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00740389"}
+Ticket: 00740389
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00738854"}
+Ticket: 00738854
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00740435"}
+Ticket: 00740435
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00740384"}
+Ticket: 00740384
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00739421"}
+Ticket: 00739421
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00739421"}
+Ticket: 00739421
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00739421"}
+Ticket: 00739421
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00739421"}
+Ticket: 00739421
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741330"}
+Ticket: 00741330
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741390"}
+Ticket: 00741390
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741388"}
+Ticket: 00741388
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741388"}
+Ticket: 00741388
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737234"}
+Ticket: 00737234
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741823"}
+Ticket: 00741823
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741787"}
+Ticket: 00741787
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741388"}
+Ticket: 00741388
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741388"}
+Ticket: 00741388
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00739421"}
+Ticket: 00739421
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741844"}
+Ticket: 00741844
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00737234"}
+Ticket: 00737234
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741330"}
+Ticket: 00741330
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741867"}
+Ticket: 00741867
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741873"}
+Ticket: 00741873
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743114"}
+Ticket: 00743114
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743044"}
+Ticket: 00743044
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00740384"}
+Ticket: 00740384
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743246"}
+Ticket: 00743246
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00694630"}
+Ticket: 00694630
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743246"}
+Ticket: 00743246
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743114"}
+Ticket: 00743114
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00739465"}
+Ticket: 00739465
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743688"}
+Ticket: 00743688
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743044"}
+Ticket: 00743044
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00694630"}
+Ticket: 00694630
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743114"}
+Ticket: 00743114
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00694630"}
+Ticket: 00694630
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00742678"}
+Ticket: 00742678
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00744110"}
+Ticket: 00744110
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743965"}
+Ticket: 00743965
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743965"}
+Ticket: 00743965
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743965"}
+Ticket: 00743965
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743965"}
+Ticket: 00743965
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00744115"}
+Ticket: 00744115
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743965"}
+Ticket: 00743965
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743965"}
+Ticket: 00743965
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00744115"}
+Ticket: 00744115
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743965"}
+Ticket: 00743965
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00741388"}
+Ticket: 00741388
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00745619"}
+Ticket: 00745619
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00745604"}
+Ticket: 00745604
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00745583"}
+Ticket: 00745583
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00744176"}
+Ticket: 00744176
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00743688"}
+Ticket: 00743688
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00673742"}
+Ticket: 00673742
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00594025"}
+Ticket: 00594025
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00752847"}
+Ticket: 00752847
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00751029"}
+Ticket: 00751029
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753014"}
+Ticket: 00753014
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753031"}
+Ticket: 00753031
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00742678"}
+Ticket: 00742678
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753031"}
+Ticket: 00753031
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753031"}
+Ticket: 00753031
+text_length == 24
+Message received - {"ticketNum":"00753031"}
+Ticket: 00753031
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 20
+Message received - {"ticketNum":"null"}
+Ticket: null
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753917"}
+Ticket: 00753917
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753946"}
+Ticket: 00753946
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753944"}
+Ticket: 00753944
+text_length == 24
+Message received - {"ticketNum":"00753944"}
+Ticket: 00753944
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753949"}
+Ticket: 00753949
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00752847"}
+Ticket: 00752847
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753970"}
+Ticket: 00753970
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753970"}
+Ticket: 00753970
+text_length == 24
+Message received - {"ticketNum":"00753970"}
+Ticket: 00753970
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753970"}
+Ticket: 00753970
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754161"}
+Ticket: 00754161
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754352"}
+Ticket: 00754352
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754352"}
+Ticket: 00754352
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754352"}
+Ticket: 00754352
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754352"}
+Ticket: 00754352
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754352"}
+Ticket: 00754352
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754400"}
+Ticket: 00754400
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00594025"}
+Ticket: 00594025
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00594025"}
+Ticket: 00594025
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753970"}
+Ticket: 00753970
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00673742"}
+Ticket: 00673742
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754702"}
+Ticket: 00754702
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754702"}
+Ticket: 00754702
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00751968"}
+Ticket: 00751968
+text_length == 24
+Message received - {"ticketNum":"00751968"}
+Ticket: 00751968
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754352"}
+Ticket: 00754352
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00751968"}
+Ticket: 00751968
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754739"}
+Ticket: 00754739
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00751968"}
+Ticket: 00751968
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754739"}
+Ticket: 00754739
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753949"}
+Ticket: 00753949
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00754739"}
+Ticket: 00754739
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00755341"}
+Ticket: 00755341
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00755341"}
+Ticket: 00755341
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00755341"}
+Ticket: 00755341
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00755341"}
+Ticket: 00755341
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00594025"}
+Ticket: 00594025
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00756561"}
+Ticket: 00756561
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00756598"}
+Ticket: 00756598
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00756412"}
+Ticket: 00756412
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00673742"}
+Ticket: 00673742
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753958"}
+Ticket: 00753958
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753958"}
+Ticket: 00753958
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753958"}
+Ticket: 00753958
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753958"}
+Ticket: 00753958
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753958"}
+Ticket: 00753958
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753958"}
+Ticket: 00753958
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00757463"}
+Ticket: 00757463
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00757232"}
+Ticket: 00757232
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00756351"}
+Ticket: 00756351
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00756351"}
+Ticket: 00756351
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00757463"}
+Ticket: 00757463
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758158"}
+Ticket: 00758158
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758168"}
+Ticket: 00758168
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00757232"}
+Ticket: 00757232
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758169"}
+Ticket: 00758169
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758197"}
+Ticket: 00758197
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758200"}
+Ticket: 00758200
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758174"}
+Ticket: 00758174
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758200"}
+Ticket: 00758200
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758158"}
+Ticket: 00758158
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00757232"}
+Ticket: 00757232
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758158"}
+Ticket: 00758158
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758145"}
+Ticket: 00758145
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758174"}
+Ticket: 00758174
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00755353"}
+Ticket: 00755353
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00755353"}
+Ticket: 00755353
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00755353"}
+Ticket: 00755353
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758174"}
+Ticket: 00758174
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00755353"}
+Ticket: 00755353
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758835"}
+Ticket: 00758835
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00757909"}
+Ticket: 00757909
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758939"}
+Ticket: 00758939
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758879"}
+Ticket: 00758879
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758743"}
+Ticket: 00758743
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758903"}
+Ticket: 00758903
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758933"}
+Ticket: 00758933
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758879"}
+Ticket: 00758879
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00757909"}
+Ticket: 00757909
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758942"}
+Ticket: 00758942
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00757463"}
+Ticket: 00757463
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00758174"}
+Ticket: 00758174
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759156"}
+Ticket: 00759156
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759156"}
+Ticket: 00759156
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759156"}
+Ticket: 00759156
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00760866"}
+Ticket: 00760866
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00761231"}
+Ticket: 00761231
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00761280"}
+Ticket: 00761280
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00761279"}
+Ticket: 00761279
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00761280"}
+Ticket: 00761280
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00757463"}
+Ticket: 00757463
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00763402"}
+Ticket: 00763402
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00763402"}
+Ticket: 00763402
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00763402"}
+Ticket: 00763402
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00763123"}
+Ticket: 00763123
+text_length == 24
+Message received - {"ticketNum":"00763123"}
+Ticket: 00763123
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00673742"}
+Ticket: 00673742
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00763765"}
+Ticket: 00763765
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00762699"}
+Ticket: 00762699
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00763765"}
+Ticket: 00763765
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00765044"}
+Ticket: 00765044
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00765022"}
+Ticket: 00765022
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00765168"}
+Ticket: 00765168
+text_length == 24
+Message received - {"ticketNum":"00765168"}
+Ticket: 00765168
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00765458"}
+Ticket: 00765458
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00753431"}
+Ticket: 00753431
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00765471"}
+Ticket: 00765471
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00765471"}
+Ticket: 00765471
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00764972"}
+Ticket: 00764972
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00764972"}
+Ticket: 00764972
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00764686"}
+Ticket: 00764686
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00764686"}
+Ticket: 00764686
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00766390"}
+Ticket: 00766390
+text_length == 24
+Message received - {"ticketNum":"00766390"}
+Ticket: 00766390
+text_length == 24
+Message received - {"ticketNum":"00766390"}
+Ticket: 00766390
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00766423"}
+Ticket: 00766423
+text_length == 24
+Message received - {"ticketNum":"00766423"}
+Ticket: 00766423
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00765022"}
+Ticket: 00765022
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00765044"}
+Ticket: 00765044
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00766868"}
+Ticket: 00766868
+text_length == 24
+Message received - {"ticketNum":"00766868"}
+Ticket: 00766868
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00766409"}
+Ticket: 00766409
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 20
+Message received - {"ticketNum":"null"}
+Ticket: null
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00766390"}
+Ticket: 00766390
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00759669"}
+Ticket: 00759669
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767255"}
+Ticket: 00767255
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767248"}
+Ticket: 00767248
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767248"}
+Ticket: 00767248
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767287"}
+Ticket: 00767287
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767552"}
+Ticket: 00767552
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767624"}
+Ticket: 00767624
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767599"}
+Ticket: 00767599
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767638"}
+Ticket: 00767638
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767639"}
+Ticket: 00767639
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767639"}
+Ticket: 00767639
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767638"}
+Ticket: 00767638
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00766969"}
+Ticket: 00766969
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767624"}
+Ticket: 00767624
+text_length == 24
+Message received - {"ticketNum":"00767624"}
+Ticket: 00767624
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767817"}
+Ticket: 00767817
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767639"}
+Ticket: 00767639
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00768205"}
+Ticket: 00768205
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00768205"}
+Ticket: 00768205
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767817"}
+Ticket: 00767817
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00768205"}
+Ticket: 00768205
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00768205"}
+Ticket: 00768205
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767817"}
+Ticket: 00767817
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00768799"}
+Ticket: 00768799
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00594025"}
+Ticket: 00594025
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00769707"}
+Ticket: 00769707
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00769716"}
+Ticket: 00769716
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00769716"}
+Ticket: 00769716
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00770094"}
+Ticket: 00770094
+text_length == 24
+Message received - {"ticketNum":"00770094"}
+Ticket: 00770094
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00770094"}
+Ticket: 00770094
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00766551"}
+Ticket: 00766551
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00673742"}
+Ticket: 00673742
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00770089"}
+Ticket: 00770089
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00767639"}
+Ticket: 00767639
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00770689"}
+Ticket: 00770689
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00769716"}
+Ticket: 00769716
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00770089"}
+Ticket: 00770089
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00770205"}
+Ticket: 00770205
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00770101"}
+Ticket: 00770101
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00773855"}
+Ticket: 00773855
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00773944"}
+Ticket: 00773944
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00773944"}
+Ticket: 00773944
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00773944"}
+Ticket: 00773944
+text_length == 16
+Message received - {"text":"Hello"}
+text_length == 24
+Message received - {"ticketNum":"00768205"}
+Ticket: 00768205
+text_length == 24
+Message received - {"ticketNum":"00768205"}
+Ticket: 00768205

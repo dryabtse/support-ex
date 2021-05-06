@@ -1,0 +1,9 @@
+{
+  "name": "com.villainsoftware.support_ex_caller",
+  "description": "Support Extension App Caller",
+  "path": "support-ex-app-caller.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://hljjhhifebihbaoecinbehgfbelcgbad/"
+  ]
+}
