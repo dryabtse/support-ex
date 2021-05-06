@@ -77,11 +77,17 @@ def manageTicket(sourceMessageText):
     if sourceMessage['ticketNum'] != 'null':
       f = open(TMPSCRIPT, 'w')
       f.write('. ~/manageTicket.sh %s && bash' % sourceMessage['ticketNum'])
-      runBash(sourceMessage['ticketNum'])
+      runBash()
+      pinTicketDir(sourceMessage['ticketNum'])
+      
 
-def runBash(ticket):
+def runBash():
   bashExecPath = 'C:\\Windows\\System32\\bash.exe'
   os.system("start cmd /c " + bashExecPath + ' runme.sh')
+
+
+def pinTicketDir(ticket):
+  os.system("start cmd /c powershell -file \"H:\\WORK\\Tools\\add-quick-access-link.ps1\" \"H:\\WORK\\OPEN\\" + ticket)
   
 
 def Main():
