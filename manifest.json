@@ -22,6 +22,5 @@
       "48": "icons/android-icon-48x48.png",
       "128": "icons/apple-icon-128x128.png"
     },
-    // "options_page": "options.html",
     "manifest_version": 2
   }

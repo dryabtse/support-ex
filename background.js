@@ -6,7 +6,6 @@
       chrome.declarativeContent.onPageChanged.addRules([{
         conditions: [new chrome.declarativeContent.PageStateMatcher({
             pageUrl: {hostEquals: 'mongodb.lightning.force.com'}
-        //   pageUrl: {hostEquals: 'developer.chrome.com'},
         })
         ],
             actions: [new chrome.declarativeContent.ShowPageAction()]
