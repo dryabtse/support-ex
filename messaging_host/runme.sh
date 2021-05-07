@@ -1,1 +1,0 @@
-. ~/manageTicket.sh 00768205 && bash
