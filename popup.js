@@ -14,13 +14,8 @@ chrome.runtime.sendNativeMessage(nativeMessagingHost,
 
   /* The function that finds and returns the selected text */
 var funcToInject = function() {
-    // var ticketNumLink = window.document.querySelector("#brandBand_1 > div > div > one-record-home-flexipage2 > forcegenerated-adgrollup_component___forcegenerated__flexipage_recordpage___cases_lwc___case___view > forcegenerated-flexipage_cases_lwc_case__view_js > record_flexipage-record-page-decorator > div.record-page-decorator > slot > flexipage-record-home-template-desktop2 > div > div.slds-col.slds-size_1-of-1.row.region-header > slot > slot > flexipage-component2:nth-child(2) > slot > c-cc-highlights-panel > div.header-pin-wrapper > div > div.slds-page-header__row.slds-page-header__row_gutters > div > ul > li.slds-page-header__detail-block.slds-p-right_small.slds-p-top_medium > div > table > tbody > tr > td:nth-child(1) > div:nth-child(2) > a");
-    // var ticketNum = window.document.querySelector("#\\31 033\\:0 > div > div > div > div > ul.tabBarItems.slds-tabs--default__nav > li.oneConsoleTabItem.tabItem.slds-tabs--default__item.slds-sub-tabs__item.slds-grid.slds-grid--vertical-align-center.slds-tabs__item--overflow.slds-active.active.hideAnimation.navexConsoleTabItem > a > span.title.slds-truncate").innerHTML.split(" ")[0];
-    //var ticketNumLink = window.document.querySelector("#oneHeader > div.bBottom > div > div.slds-context-bar__secondary.navCenter > div > div > ul.tabBarItems.slds-grid > li.tabItem.slds-context-bar__item.slds-context-bar__item_tab.slds-is-active.active.hasActions.hideAnimation.oneConsoleTabItem > a > span.title.slds-truncate");
     var ticketNum = window.document.querySelector("body > div.desktop.container.forceStyle.oneOne.navexDesktopLayoutContainer.lafAppLayoutHost.forceAccess.tablet > div.viewport > section > div.navexWorkspaceManager > div > div.tabsetHeader.slds-context-bar.slds-context-bar--tabs > div.slds-context-bar__secondary.navCenter.tabBarContainer > div > div > ul.tabBarItems.slds-grid > li.oneConsoleTabItem.tabItem.slds-context-bar__item.slds-context-bar__item_tab.slds-is-active.active.hasActions.hideAnimation.navexConsoleTabItem > a > span.title.slds-truncate").innerHTML.split(" ")[0];
-    //console.log("Ticket found: " + ticketNumLink.innerHTML);
     console.log("Ticket found: " + ticketNum);
-    //return ticketNumLink.innerHTML.substr(0,8);
     return ticketNum;
 };
 /* This line converts the above function to string
