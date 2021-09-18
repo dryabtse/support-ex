@@ -1,4 +1,5 @@
-let clipCopy = document.getElementById('clipCopy');
+let ticketCopy = document.getElementById('ticketCopy');
+let nameCopy = document.getElementById('nameCopy');
 let manageTicket = document.getElementById('manageTicket');
 var nativeMessagingHost = 'com.villainsoftware.support_ex_caller';
 
@@ -14,9 +15,10 @@ chrome.runtime.sendNativeMessage(nativeMessagingHost,
 
   /* The function that finds and returns the selected text */
 var funcToInject = function() {
-    var ticketNum = window.document.querySelector("body > div.desktop.container.forceStyle.oneOne.navexDesktopLayoutContainer.lafAppLayoutHost.forceAccess.tablet > div.viewport > section > div.navexWorkspaceManager > div > div.tabsetHeader.slds-context-bar.slds-context-bar--tabs > div.slds-context-bar__secondary.navCenter.tabBarContainer > div > div > ul.tabBarItems.slds-grid > li.oneConsoleTabItem.tabItem.slds-context-bar__item.slds-context-bar__item_tab.slds-is-active.active.hasActions.hideAnimation.navexConsoleTabItem > a > span.title.slds-truncate").innerHTML.split(" ")[0];
+    const ticketNum = window.document.querySelector("body > div.desktop.container.forceStyle.oneOne.navexDesktopLayoutContainer.lafAppLayoutHost.forceAccess.tablet > div.viewport > section > div.navexWorkspaceManager > div > div.tabsetHeader.slds-context-bar.slds-context-bar--tabs > div.slds-context-bar__secondary.navCenter.tabBarContainer > div > div > ul.tabBarItems.slds-grid > li.oneConsoleTabItem.tabItem.slds-context-bar__item.slds-context-bar__item_tab.slds-is-active.active.hasActions.hideAnimation.navexConsoleTabItem > a > span.title.slds-truncate").innerHTML.split(" ")[0];
     console.log("Ticket found: " + ticketNum);
-    return ticketNum;
+    const contactName = window.document.querySelector("#brandBand_2 > div > div > one-record-home-flexipage2 > forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-cases_-l-w-c___-case___-v-i-e-w > forcegenerated-flexipage_cases_lwc_case__view_js > record_flexipage-record-page-decorator > div.record-page-decorator > records-record-layout-event-broker > slot > slot > flexipage-record-home-template-desktop2 > div > div.slds-col.slds-size_1-of-1.row.region-header > slot > slot > flexipage-component2:nth-child(2) > slot > c-cc-highlights-panel > div.header-pin-wrapper > div > div.slds-page-header__row.slds-page-header__row_gutters > div > ul > li:nth-child(4) > div:nth-child(2) > a").innerHTML;
+    return { 'ticketNum': ticketNum, 'contactName': contactName };
 };
 /* This line converts the above function to string
  * (and makes sure it will be called instantly) */
@@ -25,27 +27,34 @@ var jsCodeStr = ';(' + funcToInject + ')();';
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     chrome.tabs.executeScript(
         tabs[0].id,
-            {code: jsCodeStr}, function(ticketNum) {
+            {code: jsCodeStr}, function(arg) {
+            var ticketNum = arg[0]["ticketNum"];
+            var contactName = arg[0]["contactName"]
             if (chrome.runtime.lastError) {
             /* Report any error */
                 alert('ERROR:\n' + chrome.runtime.lastError.message);
-            } else if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
+            } else {
+                if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
                 document.getElementById("ticket_found").innerHTML = ticketNum;
-            };
+                };
+                if ((contactName.length > 0)) {
+                    document.getElementById("contact_name").innerHTML = contactName;
+                };
+        } // else
     });
 });
 
-clipCopy.onclick = function(element) {
-    var ticketNum = document.getElementById('ticket_found');
+var clipCopy = function(elementId) {
+    const el = document.getElementById(elementId);
 
     if (document.body.createTextRange) {
         const range = document.body.createTextRange();
-        range.moveToElementText(ticketNum);
+        range.moveToElementText(el);
         range.select();
     } else if (window.getSelection) {
         const selection = window.getSelection();
         const range = document.createRange();
-        range.selectNodeContents(ticketNum);
+        range.selectNodeContents(el);
         selection.removeAllRanges();
         selection.addRange(range);
     } else {
@@ -57,6 +66,15 @@ clipCopy.onclick = function(element) {
     } else {
         console.error('failed to get clipboard content');
     }
+};
+
+
+ticketCopy.onclick = function(element) {
+    clipCopy('ticket_found');
+};
+
+nameCopy.onclick = function(element) {
+    clipCopy('contact_name');
 }
 
 manageTicket.onclick = function(element) {
