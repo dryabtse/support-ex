@@ -25,22 +25,26 @@ var funcToInject = function() {
 var jsCodeStr = ';(' + funcToInject + ')();';
 
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-    chrome.tabs.executeScript(
-        tabs[0].id,
-            {code: jsCodeStr}, function(arg) {
-            var ticketNum = arg[0]["ticketNum"];
-            var contactName = arg[0]["contactName"]
-            if (chrome.runtime.lastError) {
-            /* Report any error */
-                alert('ERROR:\n' + chrome.runtime.lastError.message);
-            } else {
-                if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
-                document.getElementById("ticket_found").innerHTML = ticketNum;
-                };
-                if ((contactName.length > 0)) {
-                    document.getElementById("contact_name").innerHTML = contactName;
-                };
-        } // else
+    chrome.scripting.executeScript({
+        target: { tabId: tabs[0].id, allFrames: true},
+        func: funcToInject 
+    }, 
+    function(injectionResults) {
+        for (const frameResult of injectionResults)
+            console.log('Frame Title: ' + JSON.stringify(frameResult.result));
+        const contactName = injectionResults[0].result["contactName"];
+        const ticketNum = injectionResults[0].result["ticketNum"];
+        if (chrome.runtime.lastError) {
+        /* Report any error */
+            alert('ERROR:\n' + chrome.runtime.lastError.message);
+        } else {
+            if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
+            document.getElementById("ticket_found").innerHTML = ticketNum;
+            };
+            if ((contactName.length > 0)) {
+                document.getElementById("contact_name").innerHTML = contactName;
+            };
+    } // else
     });
 });
 
@@ -75,7 +79,7 @@ ticketCopy.onclick = function(element) {
 
 nameCopy.onclick = function(element) {
     clipCopy('contact_name');
-}
+};
 
 manageTicket.onclick = function(element) {
     var ticketNum = document.getElementById('ticket_found').innerHTML;
@@ -88,3 +92,14 @@ manageTicket.onclick = function(element) {
             document.body.appendChild(resEl);
         });
 };
+
+clearSides.onclick = function(element) {
+    chrome.runtime.sendNativeMessage(nativeMessagingHost,
+        { "clearSides": 1 },
+        function(response) {
+            console.log("Received " + JSON.stringify(response));
+            var resEl = document.createElement("p");
+            resEl.innerHTML = JSON.stringify(response);
+            document.body.appendChild(resEl);
+        });
+}; 
