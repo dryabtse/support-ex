@@ -3,8 +3,6 @@
 import struct
 import sys
 import threading
-# import os
-# from manageTicketOSX import manageTicket
 try:
   import queue as Queue
 except ImportError:
@@ -38,7 +36,7 @@ if sys.platform == "win32":
 LOGFILE = PATHPREFIX + 'log.txt'
 TMPSCRIPT = PATHPREFIX + 'runme.sh'
 
-ENABLE_LOGGING = False
+ENABLE_LOGGING = True
 
 def logger(text):
   if ENABLE_LOGGING == True:
