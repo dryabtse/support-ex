@@ -3,6 +3,7 @@
 import struct
 import sys
 import threading
+from datetime import datetime
 try:
   import queue as Queue
 except ImportError:
@@ -33,13 +34,15 @@ if sys.platform == "darwin":
 if sys.platform == "win32":
   from manageTicketW32 import manageTicket
 
-LOGFILE = PATHPREFIX + 'log.txt'
+LOGFILE = PATHPREFIX + 'support_ex_log.txt'
 TMPSCRIPT = PATHPREFIX + 'runme.sh'
 
 ENABLE_LOGGING = True
 
 def logger(text):
   if ENABLE_LOGGING == True:
+    current_time = datetime.now().strftime("%Y/%m/%d:%H:%M:%S")
+    text = current_time + "\t" + text.strip() + "\n"
     f = open(LOGFILE, 'a')
     f.write(text)
     f.close()
