@@ -4,15 +4,16 @@
     "description": "Tickets management extension",
     "permissions": ["declarativeContent", "storage", "activeTab", "clipboardWrite", "nativeMessaging", "scripting"],
     "background": {
-      "service_worker": "background.js"
+      "service_worker": "background.js",
+      "type": "module"
     },
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "16": "icons/favicon-16x16.png",
-        "32": "icons/favicon-32x32.png",
-        "48": "icons/android-icon-48x48.png",
-        "128": "icons/apple-icon-128x128.png"
+        "16": "icons/icon16_grey.png",
+        "32": "icons/icon32_grey.png",
+        "48": "icons/icon48_grey.png",
+        "128": "icons/icon128_grey.png"
       }
     },
     "icons": {
