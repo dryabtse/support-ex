@@ -28,8 +28,8 @@ var funcToInject = function() {
     // To get the current URL
     const url = getCurrentURL();
 
-    if (url.includes("hub.corp.mongodb.com")) {
-        const link = new URL(url);
+    if (url.includes("hub.corp.mongodb.com") || url.includes("jira.mongodb.org/browse/HELP")) {
+        var link = new URL(url);
         ticketNum = link.pathname.split("/")[2];
     } else {
         element = window.document.querySelector("body > div.desktop.container.forceStyle.oneOne.navexDesktopLayoutContainer.lafAppLayoutHost.forceAccess.tablet > div.viewport > section > div.navexWorkspaceManager > div > div.tabsetHeader.slds-context-bar.slds-context-bar--tabs.slds-no-print > div.slds-context-bar__secondary.navCenter.tabBarContainer > div > div > ul.tabBarItems.slds-grid > li.oneConsoleTabItem.tabItem.slds-context-bar__item.slds-context-bar__item_tab.slds-is-active.active.hasActions.hideAnimation.navexConsoleTabItem > a > span.title.slds-truncate");
