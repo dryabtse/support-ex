@@ -34,7 +34,7 @@ var funcToInject = function() {
     } else {
         element = window.document.querySelector("body > div.desktop.container.forceStyle.oneOne.navexDesktopLayoutContainer.lafAppLayoutHost.forceAccess.tablet > div.viewport > section > div.navexWorkspaceManager > div > div.tabsetHeader.slds-context-bar.slds-context-bar--tabs.slds-no-print > div.slds-context-bar__secondary.navCenter.tabBarContainer > div > div > ul.tabBarItems.slds-grid > li.oneConsoleTabItem.tabItem.slds-context-bar__item.slds-context-bar__item_tab.slds-is-active.active.hasActions.hideAnimation.navexConsoleTabItem > a > span.title.slds-truncate");
         if (element) {
-            ticketNum = element.innerHTML.split(":")[0];
+            ticketNum = element.innerHTML.split(":")[0].split('|')[0].trim();
         } else ticketNum = "none found";
     }
 
