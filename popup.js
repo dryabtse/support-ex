@@ -1,6 +1,6 @@
-let ticketCopy = document.getElementById('ticketCopy');
-let nameCopy = document.getElementById('nameCopy');
-let manageTicket = document.getElementById('manageTicket');
+let ticketCopyButton = document.getElementById('ticketCopy');
+let nameCopyButton = document.getElementById('nameCopy');
+let manageTicketButton = document.getElementById('manageTicket');
 const nativeMessagingHost = 'com.villainsoftware.support_ex_caller';
 
 const contextType = {
@@ -13,12 +13,10 @@ const contextType = {
 
 
 async function getTabURL() {
-    url = null;
-    tabs = await chrome.tabs.query({active: true, currentWindow: true});
+    const tabs = await chrome.tabs.query({active: true, currentWindow: true});
     return tabs[0].url;
 };
 
-var link = "";
 getTabURL().then((link) => {
     console.log(link);
     const context = setContext(link);
@@ -66,7 +64,7 @@ function callbackSF(injectionResults) {
         if ((contactName.length > 0)) {
             if (contactName == "none found") {
                 document.getElementById("contact_name").style.display = "none";
-                document.getElementById("nameCopy").style.display = "none";
+                nameCopyButton.style.display = "none";
             } else 
                 document.getElementById("contact_name").innerHTML = contactName;
         };
@@ -85,7 +83,7 @@ function callbackHelp(injectionResults) {
             document.getElementById("ticket_found").innerHTML = ticketNum;
         };
         document.getElementById("contact_name").style.display = "none";
-        document.getElementById("nameCopy").style.display = "none";
+        nameCopyButton.style.display = "none";
         document.getElementById("atlasAdmin").style.display = "none";
     }; // else
 };
@@ -122,7 +120,8 @@ function callbackHub(injectionResults) {
 
 function callbackAtlas(injectionResults) {
     const project = injectionResults[0].result["project"];
-    var destinationURL = "https://cloud.mongodb.com/v2/admin#/atlas/search";
+    const baseURL = "https://cloud.mongodb.com/v2";
+    var destinationURL = baseURL + "/admin#/atlas/search";
 
     if (chrome.runtime.lastError) {
         /* Report any error */
@@ -135,12 +134,23 @@ function callbackAtlas(injectionResults) {
                 document.getElementById("ticketCopy").style.display = "none";
             } else  {
                 document.getElementById("ticket_found").innerHTML = project;
+                document.getElementById("ticket_found").style.display = "none";
                 document.getElementById("ticketCopy").innerText = "Project To Clipboard";
                 document.getElementById("atlasAdmin").onclick = function() {
-                    if (project != "null") 
+                    if (project != "null") {
                         destinationURL = destinationURL + "?search=" + project + "&operator=AND";
+
+                    }
                     window.open(destinationURL,'_blank');
                 };
+                document.getElementById("atlasLogs").removeAttribute("hidden");
+                document.getElementById("atlasLogs").onclick = function() {
+                    if (project != "null") {
+                        destinationURL = baseURL + '/' + project + "#/deployment/logRequestHistory";
+                        window.open(destinationURL,'_blank');
+                    };
+                }
+        
             };
         };
         document.getElementById("contact_name").style.display = "none";
@@ -271,15 +281,15 @@ const clipCopy = function(elementId) {
 };
 
 
-ticketCopy.onclick = function(element) {
+ticketCopyButton.onclick = function(element) {
     clipCopy('ticket_found');
 };
 
-nameCopy.onclick = function(element) {
+nameCopyButton.onclick = function(element) {
     clipCopy('contact_name');
 };
 
-manageTicket.onclick = function(element) {
+manageTicketButton.onclick = function(element) {
     const ticketNum = document.getElementById('ticket_found').innerHTML;
     chrome.runtime.sendNativeMessage(nativeMessagingHost,
         { "ticketNum": ticketNum },
