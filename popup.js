@@ -15,10 +15,8 @@ async function getTabURL() {
 };
 
 getTabURL().then((link) => {
-    console.log(link);
     const context = setContext(link);
-    console.log(context);
-    var funcToInject = null;
+    var funcToInject = function() {};
     var callback = function() {};
 
     switch(context) {
@@ -38,12 +36,9 @@ getTabURL().then((link) => {
             funcToInject = funcToInjectAtlas;
             callback = callbackAtlas;
             break;
-        default:
-            funcToInject = function() {};
-            callback = function() {};
     };
-
-    var jsCodeStr = ';(' + funcToInject + ')();';
+    console.log("context: " + context);
+    const jsCodeStr = ';(' + funcToInject + ')();';
 
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.scripting.executeScript({
@@ -97,9 +92,6 @@ function callbackHelp(injectionResults) {
 };
 
 function callbackHub(injectionResults) {
-    for (const frameResult of injectionResults)
-            console.log('Frame Title: ' + JSON.stringify(frameResult.result));
-
     const contactName = injectionResults[0].result["contactName"];
     const ticketNum = injectionResults[0].result["ticketNum"];
     const cloudLink = injectionResults[0].result["cloudLink"];
@@ -113,15 +105,16 @@ function callbackHub(injectionResults) {
             ticketCopy.removeAttribute("hidden");
             manageTicket.removeAttribute("hidden");
         };
-        if ((contactName.length > 0)) {
+        if (contactName.length > 0) {
             contact_name.innerHTML = contactName;
             contact_name.removeAttribute("hidden");
             nameCopy.removeAttribute("hidden");
         };
-        if ((cloudLink.length > 0)) {
+        if (cloudLink.length > 0) {
             try {
                 new URL(cloudLink);
                 atlasAdmin.removeAttribute("hidden");
+                atlasAdmin.innerText = "Atlas Project";
                 atlasAdmin.onclick = function() {
                     window.open(cloudLink, '_blank');
                 };
@@ -133,7 +126,10 @@ function callbackHub(injectionResults) {
 };
 
 function callbackAtlas(injectionResults) {
+    // for (const frameResult of injectionResults)
+    //     console.log('Frame Title: ' + JSON.stringify(frameResult.result));
     const project = injectionResults[0].result["project"];
+    const isAdmin = injectionResults[0].result["isAdmin"];
     const baseURL = "https://cloud.mongodb.com/v2";
     var destinationURL = baseURL + "/admin#/atlas/search";
 
@@ -142,15 +138,13 @@ function callbackAtlas(injectionResults) {
         alert('ERROR:\n' + chrome.runtime.lastError.message);
     } else {
         if ((project.length > 0) && (typeof(project[0]) === 'string')) {
-            if (project === 'admin' || project === 'none') {
-                ticket_found.style.display = "none";
-                atlasAdmin.style.display = "none";
-            } else  {
+            if (isAdmin === false && project != 'none') {
                 ticket_found.innerHTML = project;
-                // ticket_found.style.display = "none";
                 ticketCopy.innerText = "Project To Clipboard";
                 ticketCopy.removeAttribute("hidden");
-
+                ticketCopy.onclick = function() {
+                    navigator.clipboard.writeText(project);
+                };
                 atlasAdmin.removeAttribute("hidden");
                 atlasAdmin.onclick = function() {
                     if (project != "null") {
@@ -173,6 +167,15 @@ function callbackAtlas(injectionResults) {
                     };
                 }
         
+            } else if (isAdmin === true) {
+                atlasAdmin.removeAttribute("hidden");
+                atlasAdmin.innerText = "Atlas Project";
+                atlasAdmin.onclick = function() {
+                    if (project != "null") {
+                        destinationURL = baseURL + '/' + project + "#/deployment";
+                        window.open(destinationURL,'_blank');
+                    };
+                };
             };
         };
     }; // else
@@ -180,32 +183,31 @@ function callbackAtlas(injectionResults) {
 
     
 function setContext(url) {
-        if (url.includes("jira.mongodb.org/browse/HELP")) {
-            c = contextType.Help;
-        } else if (url.includes("mongodb.lightning.force.com")) {
-            c = contextType.SalesForce;
-        } else if (url.includes("hub.corp.mongodb.com")) {
-            c = contextType.Hub;
-        } else if (url.includes("cloud.mongodb.com")) {
-            c = contextType.Atlas;
-        } else 
-            c = contextType.Default;
-        
-        return c;
+    var c = null;
+    if (url.includes("jira.mongodb.org/browse/HELP")) {
+        c = contextType.Help;
+    } else if (url.includes("mongodb.lightning.force.com")) {
+        c = contextType.SalesForce;
+    } else if (url.includes("hub.corp.mongodb.com")) {
+        c = contextType.Hub;
+    } else if (url.includes("cloud.mongodb.com")) {
+        c = contextType.Atlas;
+    } else 
+        c = contextType.Default;
+    
+    return c;
 };
 
 const funcToInjectHelp = function() {
-        var ticketNum = "";
-        var element = null;
-        const getCurrentURL = function() {
-            return window.location.href
-        };
-        url = getCurrentURL();
-        var link = new URL(url);
+    const getCurrentURL = function() {
+        return window.location.href
+    };
+    const url = getCurrentURL();
+    const link = new URL(url);
 
-        ticketNum = link.pathname.split("/")[2];
-        console.log("Ticket found: " + ticketNum);
-        return { 'ticketNum': ticketNum };
+    const ticketNum = link.pathname.split("/")[2];
+    console.log("Ticket found: " + ticketNum);
+    return { 'ticketNum': ticketNum };
 };
 
 const funcToInjectSF = function() {
@@ -231,20 +233,38 @@ const funcToInjectSF = function() {
 
 const funcToInjectAtlas = function() {
     var project = "none";
+    var isAdmin = false;
+    
+    const validateProject = function(project) {
+        if(typeof(project) === 'string' && project.length == 24) {
+            return true;
+        } else 
+            return false;
+    };
+
     const getCurrentURL = function() {
         return window.location.href
       };
       
-    // To get the current URL
     const url = getCurrentURL(); 
 
-    var link = new URL(url);
+    const link = new URL(url);
     const pathSplit = link.pathname.split("/");
     if (pathSplit.length >= 3 )
         project = pathSplit[2];
 
-    return { 'project': project };
-}
+    if (project === "admin") {
+        const hashSplit = link.hash.split('/');
+        if (hashSplit.length >= 3) {
+            project = hashSplit[2].split('=')[1].split('&')[0];
+            if (validateProject(project))
+                isAdmin = true;
+        };
+    };
+
+    console.log("project: " + project);
+    return { 'project': project, 'isAdmin': isAdmin };
+};
 
 const funcToInjectHub = function() {
     var ticketNum = "";
@@ -254,8 +274,8 @@ const funcToInjectHub = function() {
     const getCurrentURL = function() {
         return window.location.href
     };
-    url = getCurrentURL();
-    var link = new URL(url);
+    const url = getCurrentURL();
+    const link = new URL(url);
 
     ticketNum = link.pathname.split("/")[2];
     console.log("Ticket found: " + ticketNum);
@@ -271,9 +291,7 @@ const funcToInjectHub = function() {
     } else cloudLink = "none";
 
     return { 'ticketNum': ticketNum, 'contactName': contactName, 'cloudLink': cloudLink };
-
-}
-
+};
 
 const clipCopy = function(elementId) {
     const el = document.getElementById(elementId);
