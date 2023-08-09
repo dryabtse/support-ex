@@ -1,6 +1,3 @@
-let ticketCopyButton = document.getElementById('ticketCopy');
-let nameCopyButton = document.getElementById('nameCopy');
-let manageTicketButton = document.getElementById('manageTicket');
 const nativeMessagingHost = 'com.villainsoftware.support_ex_caller';
 
 const contextType = {
@@ -23,18 +20,27 @@ getTabURL().then((link) => {
     console.log(context);
     var funcToInject = null;
     var callback = function() {};
-    if (context === contextType.Help) {
-        funcToInject = funcToInjectHelp;
-        callback = callbackHelp;
-    } else if (context === contextType.Hub) {
-        funcToInject = funcToInjectHub;
-        callback = callbackHub;
-    } else if (context === contextType.SalesForce) {
-        funcToInject = funcToInjectSF;
-        callback = callbackSF;
-    } else if (context === contextType.Atlas) {
-        funcToInject = funcToInjectAtlas;
-        callback = callbackAtlas;
+
+    switch(context) {
+        case contextType.Help:
+            funcToInject = funcToInjectHelp;
+            callback = callbackHelp;
+            break;
+        case contextType.Hub:
+            funcToInject = funcToInjectHub;
+            callback = callbackHub;
+            break;
+        case contextType.SalesForce:
+            funcToInject = funcToInjectSF;
+            callback = callbackSF;
+            break;
+        case contextType.Atlas:
+            funcToInject = funcToInjectAtlas;
+            callback = callbackAtlas;
+            break;
+        default:
+            funcToInject = function() {};
+            callback = function() {};
     };
 
     var jsCodeStr = ';(' + funcToInject + ')();';
@@ -59,16 +65,18 @@ function callbackSF(injectionResults) {
         alert('ERROR:\n' + chrome.runtime.lastError.message);
     } else {
         if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
-            document.getElementById("ticket_found").innerHTML = ticketNum;
+            ticket_found.innerHTML = ticketNum;
+            ticket_found.removeAttribute("hidden");
+            ticketCopy.removeAttribute("hidden");
+            manageTicket.removeAttribute("hidden");
         };
         if ((contactName.length > 0)) {
-            if (contactName == "none found") {
-                document.getElementById("contact_name").style.display = "none";
-                nameCopyButton.style.display = "none";
-            } else 
-                document.getElementById("contact_name").innerHTML = contactName;
+            if (contactName != "none found") {
+                contact_name.innerHTML = contactName;
+                contact_name.removeAttribute("hidden");
+                nameCopy.removeAttribute("hidden");
+            };
         };
-        document.getElementById("atlasAdmin").style.display = "none";
     }; // else
 };
 
@@ -80,11 +88,11 @@ function callbackHelp(injectionResults) {
         alert('ERROR:\n' + chrome.runtime.lastError.message);
     } else {
         if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
-            document.getElementById("ticket_found").innerHTML = ticketNum;
+            ticket_found.innerHTML = ticketNum;
+            ticket_found.removeAttribute("hidden");
+            ticketCopy.removeAttribute("hidden");
+            manageTicket.removeAttribute("hidden");
         };
-        document.getElementById("contact_name").style.display = "none";
-        nameCopyButton.style.display = "none";
-        document.getElementById("atlasAdmin").style.display = "none";
     }; // else
 };
 
@@ -100,19 +108,25 @@ function callbackHub(injectionResults) {
         alert('ERROR:\n' + chrome.runtime.lastError.message);
     } else {
         if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
-            document.getElementById("ticket_found").innerHTML = ticketNum;
+            ticket_found.innerHTML = ticketNum;
+            ticket_found.removeAttribute("hidden");
+            ticketCopy.removeAttribute("hidden");
+            manageTicket.removeAttribute("hidden");
         };
         if ((contactName.length > 0)) {
-            document.getElementById("contact_name").innerHTML = contactName;
+            contact_name.innerHTML = contactName;
+            contact_name.removeAttribute("hidden");
+            nameCopy.removeAttribute("hidden");
         };
         if ((cloudLink.length > 0)) {
             try {
                 new URL(cloudLink);
-                document.getElementById("atlasAdmin").onclick = function() {
+                atlasAdmin.removeAttribute("hidden");
+                atlasAdmin.onclick = function() {
                     window.open(cloudLink, '_blank');
                 };
             } catch (e) {
-                document.getElementById("atlasAdmin").style.display = "none";
+                atlasAdmin.style.display = "none";
             };
         };
     }; // else
@@ -129,22 +143,30 @@ function callbackAtlas(injectionResults) {
     } else {
         if ((project.length > 0) && (typeof(project[0]) === 'string')) {
             if (project === 'admin' || project === 'none') {
-                document.getElementById("ticket_found").style.display = "none";
-                document.getElementById("atlasAdmin").style.display = "none";
-                document.getElementById("ticketCopy").style.display = "none";
+                ticket_found.style.display = "none";
+                atlasAdmin.style.display = "none";
             } else  {
-                document.getElementById("ticket_found").innerHTML = project;
-                document.getElementById("ticket_found").style.display = "none";
-                document.getElementById("ticketCopy").innerText = "Project To Clipboard";
-                document.getElementById("atlasAdmin").onclick = function() {
+                ticket_found.innerHTML = project;
+                // ticket_found.style.display = "none";
+                ticketCopy.innerText = "Project To Clipboard";
+                ticketCopy.removeAttribute("hidden");
+
+                atlasAdmin.removeAttribute("hidden");
+                atlasAdmin.onclick = function() {
                     if (project != "null") {
                         destinationURL = destinationURL + "?search=" + project + "&operator=AND";
 
                     }
                     window.open(destinationURL,'_blank');
                 };
-                document.getElementById("atlasLogs").removeAttribute("hidden");
-                document.getElementById("atlasLogs").onclick = function() {
+                
+                getTabURL().then((link) => {
+                    const parsedURL = new URL(link);
+                    if (parsedURL.hash.split('/')[2] != "logRequestHistory")
+                        atlasLogs.removeAttribute("hidden");
+                });
+
+                atlasLogs.onclick = function() {
                     if (project != "null") {
                         destinationURL = baseURL + '/' + project + "#/deployment/logRequestHistory";
                         window.open(destinationURL,'_blank');
@@ -153,9 +175,6 @@ function callbackAtlas(injectionResults) {
         
             };
         };
-        document.getElementById("contact_name").style.display = "none";
-        document.getElementById("nameCopy").style.display = "none";
-        document.getElementById("manageTicket").style.display = "none";
     }; // else
 };
 
@@ -186,7 +205,7 @@ const funcToInjectHelp = function() {
 
         ticketNum = link.pathname.split("/")[2];
         console.log("Ticket found: " + ticketNum);
-        return { 'ticketNum': ticketNum, 'contactName': "none found"};
+        return { 'ticketNum': ticketNum };
 };
 
 const funcToInjectSF = function() {
@@ -281,16 +300,16 @@ const clipCopy = function(elementId) {
 };
 
 
-ticketCopyButton.onclick = function(element) {
+ticketCopy.onclick = function(element) {
     clipCopy('ticket_found');
 };
 
-nameCopyButton.onclick = function(element) {
+nameCopy.onclick = function(element) {
     clipCopy('contact_name');
 };
 
-manageTicketButton.onclick = function(element) {
-    const ticketNum = document.getElementById('ticket_found').innerHTML;
+manageTicket.onclick = function(element) {
+    const ticketNum = ticket_found.innerHTML;
     chrome.runtime.sendNativeMessage(nativeMessagingHost,
         { "ticketNum": ticketNum },
         function(response) {
