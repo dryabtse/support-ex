@@ -166,6 +166,12 @@ function callbackAtlas(injectionResults) {
                         window.open(destinationURL,'_blank');
                     };
                 }
+
+                searchProactive.removeAttribute("hidden");
+                searchProactive.onclick = function() {
+                    destinationURL = "https://jira.mongodb.org/issues/?jql=text%20~%20%22" + project + "%22%20and%20project%20%3D%20PROACTIVE%20order%20by%20created"
+                    window.open(destinationURL,'_blank');
+                };
         
             } else if (isAdmin === true) {
                 atlasAdmin.removeAttribute("hidden");
