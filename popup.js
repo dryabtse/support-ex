@@ -24,7 +24,7 @@ getTabURL().then((link) => {
     const context = setContext(link);
     console.log(context);
     var funcToInject = null;
-    var callback = callbackDefault;
+    var callback = function() {};
     if (context === contextType.Help) {
         funcToInject = funcToInjectHelp;
         callback = callbackHelp;
@@ -33,6 +33,7 @@ getTabURL().then((link) => {
         callback = callbackHub;
     } else if (context === contextType.SalesForce) {
         funcToInject = funcToInjectSF;
+        callback = callbackSF;
     } else if (context === contextType.Atlas) {
         funcToInject = funcToInjectAtlas;
         callback = callbackAtlas;
@@ -50,7 +51,7 @@ getTabURL().then((link) => {
     });
 });
 
-function callbackDefault(injectionResults) {
+function callbackSF(injectionResults) {
     // for (const frameResult of injectionResults)
         // console.log('Frame Title: ' + JSON.stringify(frameResult.result));
     const contactName = injectionResults[0].result["contactName"];
@@ -63,8 +64,13 @@ function callbackDefault(injectionResults) {
             document.getElementById("ticket_found").innerHTML = ticketNum;
         };
         if ((contactName.length > 0)) {
-            document.getElementById("contact_name").innerHTML = contactName;
+            if (contactName == "none found") {
+                document.getElementById("contact_name").style.display = "none";
+                document.getElementById("nameCopy").style.display = "none";
+            } else 
+                document.getElementById("contact_name").innerHTML = contactName;
         };
+        document.getElementById("atlasAdmin").style.display = "none";
     }; // else
 };
 
@@ -183,7 +189,8 @@ const funcToInjectSF = function() {
     if (element) {
         ticketNum = element.innerHTML.split(":")[0].split('|')[0].trim();
     } else ticketNum = "none found";
-        element = window.document.querySelector("#brandBand_2 > div > div > one-record-home-flexipage2 > forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-cases_-l-w-c___-case___-v-i-e-w > forcegenerated-flexipage_cases_lwc_case__view_js > record_flexipage-record-page-decorator > div.record-page-decorator > records-record-layout-event-broker > slot > slot > flexipage-record-home-template-desktop2 > div > div.slds-col.slds-size_1-of-1.row.region-header > slot > flexipage-component2:nth-child(2) > slot > c-cc-highlights-panel > div.header-pin-wrapper > div > div.slds-page-header__row.slds-page-header__row_gutters > div > ul > li:nth-child(4) > div:nth-child(2) > a");
+    
+    element = window.document.querySelector("#brandBand_2 > div > div > one-record-home-flexipage2 > forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-cases_-l-w-c___-case___-v-i-e-w > forcegenerated-flexipage_cases_lwc_case__view_js > record_flexipage-record-page-decorator > div.record-page-decorator > records-record-layout-event-broker > slot > slot > flexipage-record-home-template-desktop2 > div > div.slds-col.slds-size_1-of-1.row.region-header > slot > flexipage-component2:nth-child(2) > slot > c-cc-highlights-panel > div.header-pin-wrapper > div > div.slds-page-header__row.slds-page-header__row_gutters > div > ul > li:nth-child(4) > div:nth-child(2) > a");
 
     if (element) {
         contactName = element.innerHTML;
