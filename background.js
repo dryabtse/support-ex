@@ -17,6 +17,9 @@
           }),
           new chrome.declarativeContent.PageStateMatcher({
             pageUrl: {urlContains: 'jira.mongodb.org/browse/HELP'}
+          }),
+          new chrome.declarativeContent.PageStateMatcher({
+            pageUrl: {hostSuffix: 'cloud.mongodb.com'}
           })
         ],
             actions: [
