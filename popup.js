@@ -37,7 +37,6 @@ getTabURL().then((link) => {
         funcToInject = funcToInjectAtlas;
         callback = callbackAtlas;
     };
-      //  funcToInject = funcToInjectOld;
 
     var jsCodeStr = ';(' + funcToInject + ')();';
 
