@@ -2,7 +2,7 @@
     "name": "support-ex",
     "version": "1.0",
     "description": "Tickets management extension",
-    "permissions": ["declarativeContent", "storage", "activeTab", "clipboardWrite", "nativeMessaging", "scripting"],
+    "permissions": ["declarativeContent", "storage", "activeTab", "clipboardWrite", "nativeMessaging", "scripting", "storage"],
     "background": {
       "service_worker": "background.js",
       "type": "module"
@@ -22,5 +22,6 @@
       "48": "icons/android-icon-48x48.png",
       "128": "icons/apple-icon-128x128.png"
     },
+    "options_page": "options.html",
     "manifest_version": 3
   }
