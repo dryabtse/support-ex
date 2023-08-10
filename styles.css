@@ -1,18 +1,85 @@
+/* ==============================
+   Global Styles 
+   ============================== */
+
+#ticket_found {
+    font-size: 18px;
+    color: #2c3e50; /* Example color */
+    margin-bottom: 10px;
+    border-bottom: 3px solid #8fd3f4;
+    /* background: linear-gradient(45deg, #84fab0 0%, #8fd3f4 100%); */
+    transition: background-color 0.3s, color 0.3s;
+
+
+}
+
+#contact_name {
+    font-size: 16px;
+    color: #34495e; /* Example color */
+    border-bottom: 3px solid #8fd3f4;
+    /* background: linear-gradient(45deg, #fa8e6b 0%, #f97794 100%); */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#ticket_found:hover,
+#contact_name:hover {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#ticket_found.show,
+#contact_name.show {
+    animation: pulse 0.5s;
+}
+
+
+
+/* Transitions */
+button {
+    transition: background-color 0.3s;
+}
+
+/* Base button styles */
 button {
     height: 30px;
     width: 160px;
     outline: none;
-    transition: background-color 0.3s;
+    border: 1px solid #ccc;   /* Border added for more definition */
+    border-radius: 4px;       /* Rounded corners for softer look */
+    background-color: #fff;   /* Default background color */
+    cursor: pointer;          /* Hand cursor for interactivity */
+    padding: 5px 10px;        /* Some padding for better visual appearance */
+    font-size: 14px;          /* Font size for clarity */
 }
 
+/* Button hover effect */
 button:hover {
-    background-color: #f0f0f0; /* Light gray as an example */
+    background-color: #f5f5f5; /* Slightly different gray to indicate hover */
 }
 
+/* ==============================
+   Utility Styles 
+   ============================== */
+
+/* Hidden button styles */
 .hidden-btn {
     display: none;
 }
 
+/* General hidden class */
 .hidden {
     display: none;
 }

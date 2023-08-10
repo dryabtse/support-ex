@@ -144,6 +144,7 @@ function callbackAtlas(injectionResults) {
                 showElement(ticketCopy);
                 ticketCopy.onclick = function() {
                     navigator.clipboard.writeText(project);
+                    toggleTicketPulse();
                 };
                 showElement(atlasAdmin);
                 atlasAdmin.onclick = function() {
@@ -326,10 +327,12 @@ const clipCopy = function(elementId) {
 
 ticketCopy.onclick = function(element) {
     clipCopy('ticket_found');
+    toggleTicketPulse();
 };
 
 nameCopy.onclick = function(element) {
     clipCopy('contact_name');
+    toggleContactPulse();
 };
 
 manageTicket.onclick = function(element) {
@@ -363,3 +366,14 @@ function hideElement(element) {
     element.classList.add("hidden");
 }
 
+// This function toggles the "show" class for the ticket_found element
+function toggleTicketPulse() {
+    const ticketElement = document.getElementById("ticket_found");
+    ticketElement.classList.toggle("show");
+}
+
+// This function toggles the "show" class for the contact_name element
+function toggleContactPulse() {
+    const contactElement = document.getElementById("contact_name");
+    contactElement.classList.toggle("show");
+}
