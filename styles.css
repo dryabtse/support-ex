@@ -70,11 +70,6 @@ button:hover {
    Utility Styles 
    ============================== */
 
-/* Hidden button styles */
-.hidden-btn {
-    display: none;
-}
-
 /* General hidden class */
 .hidden {
     display: none;
