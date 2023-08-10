@@ -9,7 +9,7 @@ const contextType = {
 };
 
 
-async function getTabURL() {
+const getTabURL = async ()=> {
     const tabs = await chrome.tabs.query({active: true, currentWindow: true});
     return tabs[0].url;
 };
@@ -43,14 +43,14 @@ getTabURL().then((link) => {
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
         chrome.scripting.executeScript({
             target: { tabId: tabs[0].id, allFrames: true},
-            func: funcToInject 
-        }, 
+            func: funcToInject
+        },
         callback
         );
     });
 });
 
-function callbackSF(injectionResults) {
+const callbackSF = function(injectionResults) {
     // for (const frameResult of injectionResults)
         // console.log('Frame Title: ' + JSON.stringify(frameResult.result));
     const contactName = injectionResults[0].result["contactName"];
@@ -80,7 +80,7 @@ function callbackSF(injectionResults) {
     }; // else
 };
 
-function callbackHelp(injectionResults) {
+const callbackHelp = function(injectionResults) {
     const ticketNum = injectionResults[0].result["ticketNum"];
 
     if (chrome.runtime.lastError) {
@@ -96,7 +96,7 @@ function callbackHelp(injectionResults) {
     }; // else
 };
 
-function callbackHub(injectionResults) {
+const callbackHub = function(injectionResults) {
     const contactName = injectionResults[0].result["contactName"];
     const ticketNum = injectionResults[0].result["ticketNum"];
     const cloudLink = injectionResults[0].result["cloudLink"];
@@ -136,7 +136,7 @@ function callbackHub(injectionResults) {
     }; // else
 };
 
-function callbackAtlas(injectionResults) {
+const callbackAtlas = function(injectionResults) {
     // for (const frameResult of injectionResults)
     //     console.log('Frame Title: ' + JSON.stringify(frameResult.result));
     const project = injectionResults[0].result["project"];
@@ -164,7 +164,7 @@ function callbackAtlas(injectionResults) {
                     }
                     window.open(destinationURL,'_blank');
                 };
-                
+
                 getTabURL().then((link) => {
                     const parsedURL = new URL(link);
                     if (parsedURL.hash.split('/')[2] != "logRequestHistory")
@@ -183,7 +183,7 @@ function callbackAtlas(injectionResults) {
                     destinationURL = "https://jira.mongodb.org/issues/?jql=text%20~%20%22" + project + "%22%20and%20project%20%3D%20PROACTIVE%20order%20by%20created"
                     window.open(destinationURL,'_blank');
                 };
-        
+
             } else if (isAdmin === true) {
                 showElement(atlasAdmin);
                 atlasAdmin.innerText = "Atlas Project";
@@ -203,8 +203,8 @@ function callbackAtlas(injectionResults) {
     }; // else
 };
 
-    
-function setContext(url) {
+
+const setContext = function(url) {
     const contextMapping = {
         "jira.mongodb.org/browse/HELP": contextType.Help,
         "mongodb.lightning.force.com": contextType.SalesForce,
@@ -235,7 +235,7 @@ const funcToInjectHelp = function() {
 
 const funcToInjectSF = function() {
     var ticketNum = "";
-    
+
     var contactName = "";
     var element = null;
 
@@ -243,7 +243,7 @@ const funcToInjectSF = function() {
     if (element) {
         ticketNum = element.innerHTML.split(":")[0].split('|')[0].trim();
     } else ticketNum = "none found";
-    
+
     element = window.document.querySelector("#brandBand_2 > div > div > one-record-home-flexipage2 > forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-cases_-l-w-c___-case___-v-i-e-w > forcegenerated-flexipage_cases_lwc_case__view_js > record_flexipage-record-page-decorator > div.record-page-decorator > records-record-layout-event-broker > slot > slot > flexipage-record-home-template-desktop2 > div > div.slds-col.slds-size_1-of-1.row.region-header > slot > flexipage-component2:nth-child(2) > slot > c-cc-highlights-panel > div.header-pin-wrapper > div > div.slds-page-header__row.slds-page-header__row_gutters > div > ul > li:nth-child(4) > div:nth-child(2) > a");
 
     if (element) {
@@ -257,19 +257,19 @@ const funcToInjectSF = function() {
 const funcToInjectAtlas = function() {
     var project = "none";
     var isAdmin = false;
-    
+
     const validateProject = function(project) {
         if(typeof(project) === 'string' && project.length == 24) {
             return true;
-        } else 
+        } else
             return false;
     };
 
     const getCurrentURL = function() {
         return window.location.href
       };
-      
-    const url = getCurrentURL(); 
+
+    const url = getCurrentURL();
 
     const link = new URL(url);
     const pathSplit = link.pathname.split("/");
@@ -303,7 +303,7 @@ const funcToInjectHub = function() {
     ticketNum = link.pathname.split("/")[2];
     console.log("Ticket found: " + ticketNum);
     element = window.document.querySelector("#case-header > div > div > div.case-header-bottom-div > div.case-header-fields-section > div:nth-child(2) > div > div:nth-child(3) > a > span");
-    
+
     if (element) {
         contactName = element.innerHTML;
     } else contactName = "none found";
@@ -378,24 +378,24 @@ clearSides.onclick = function(element) {
             // resEl.innerHTML = JSON.stringify(response);
             // document.body.appendChild(resEl);
         });
-}; 
+};
 
-function showElement(element) {
+const showElement = function(element) {
     element.classList.remove("hidden");
 }
 
-function hideElement(element) {
+const hideElement = function(element) {
     element.classList.add("hidden");
 }
 
 // This function toggles the "show" class for the ticket_found element
-function toggleTicketPulse() {
+const toggleTicketPulse = function() {
     const ticketElement = document.getElementById("ticket_found");
     ticketElement.classList.toggle("show");
 }
 
 // This function toggles the "show" class for the contact_name element
-function toggleContactPulse() {
+const toggleContactPulse = function() {
     const contactElement = document.getElementById("contact_name");
     contactElement.classList.toggle("show");
 }
