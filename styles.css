@@ -49,23 +49,30 @@
 
 /* Base button styles */
 button {
+    max-width: 160px;
+    max-height: 50px; 
     height: 30px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    white-space: nowrap;
     width: 160px;
     outline: none;
-    border: 1px solid #ccc;   /* Border added for more definition */
+    border: 2px solid #ccc;   /* Border added for more definition */
     border-radius: 4px;       /* Rounded corners for softer look */
     background-color: #fff;   /* Default background color */
     cursor: pointer;          /* Hand cursor for interactivity */
     padding: 5px 10px;        /* Some padding for better visual appearance */
     font-size: 14px;          /* Font size for clarity */
-    transition: background-color 0.3s;
+    /* transition: background-color 0.3s; */
+    transition: all 0.3s;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     font-family: 'Roboto', sans-serif;
 }
 
 /* Button hover effect */
 button:hover {
-    background-color: #f5f5f5; /* Slightly different gray to indicate hover */
+    background-color: #96c9ac; /* Slightly different gray to indicate hover */
+    font-size: 15px;          /* Font size for clarity */
 }
 
 /* ==============================

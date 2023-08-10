@@ -374,9 +374,9 @@ clearSides.onclick = function(element) {
         { "clearSides": 1 },
         function(response) {
             console.log("Received " + JSON.stringify(response));
-            const resEl = document.createElement("p");
-            resEl.innerHTML = JSON.stringify(response);
-            document.body.appendChild(resEl);
+            // const resEl = document.createElement("p");
+            // resEl.innerHTML = JSON.stringify(response);
+            // document.body.appendChild(resEl);
         });
 }; 
 
