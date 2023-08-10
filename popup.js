@@ -72,6 +72,11 @@ function callbackSF(injectionResults) {
                 showElement(nameCopy);
             };
         };
+        showElement(askHelp);
+        askHelp.onclick = function() {
+            const destinationURL = "https://jira.mongodb.org/plugins/servlet/desk/portal/13";
+            window.open(destinationURL, '_blank');
+        };
     }; // else
 };
 
@@ -122,6 +127,11 @@ function callbackHub(injectionResults) {
             } catch (e) {
                 hideElement(atlasAdmin);
             };
+        };
+        showElement(askHelp);
+        askHelp.onclick = function() {
+            const destinationURL = "https://jira.mongodb.org/plugins/servlet/desk/portal/13";
+            window.open(destinationURL, '_blank');
         };
     }; // else
 };
@@ -184,6 +194,11 @@ function callbackAtlas(injectionResults) {
                     };
                 };
             };
+        };
+        showElement(askHelp);
+        askHelp.onclick = function() {
+            const destinationURL = "https://jira.mongodb.org/plugins/servlet/desk/portal/13/create/77";
+            window.open(destinationURL, '_blank');
         };
     }; // else
 };
