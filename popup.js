@@ -363,9 +363,9 @@ manageTicket.onclick = function(element) {
         { "ticketNum": ticketNum },
         function(response) {
             console.log("Received " + JSON.stringify(response));
-            var resEl = document.createElement("p");
-            resEl.innerHTML = JSON.stringify(response);
-            document.body.appendChild(resEl);
+            // var resEl = document.createElement("p");
+            // resEl.innerHTML = JSON.stringify(response);
+            // document.body.appendChild(resEl);
         });
 };
 
