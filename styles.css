@@ -9,8 +9,8 @@
     border-bottom: 3px solid #8fd3f4;
     /* background: linear-gradient(45deg, #84fab0 0%, #8fd3f4 100%); */
     transition: background-color 0.3s, color 0.3s;
-
-
+    /* font-family: 'Roboto', sans-serif; Using Roboto for ticket_found */
+    font-family: 'Press Start 2P', cursive;
 }
 
 #contact_name {
@@ -19,6 +19,8 @@
     border-bottom: 3px solid #8fd3f4;
     /* background: linear-gradient(45deg, #fa8e6b 0%, #f97794 100%); */
     transition: background-color 0.3s, color 0.3s;
+    /* font-family: 'Open Sans', sans-serif; /* Using Open Sans for contact_name */
+    font-family: 'Press Start 2P', cursive;
 }
 
 #ticket_found:hover,
@@ -45,13 +47,6 @@
     animation: pulse 0.5s;
 }
 
-
-
-/* Transitions */
-button {
-    transition: background-color 0.3s;
-}
-
 /* Base button styles */
 button {
     height: 30px;
@@ -63,6 +58,7 @@ button {
     cursor: pointer;          /* Hand cursor for interactivity */
     padding: 5px 10px;        /* Some padding for better visual appearance */
     font-size: 14px;          /* Font size for clarity */
+    transition: background-color 0.3s;
 }
 
 /* Button hover effect */
