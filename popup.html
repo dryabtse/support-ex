@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <style>
-        button {
-          height: 30px;
-          width : 160px;
-          outline: none;
-        }
-      </style>
-    </head>
-    <body>
-      <h1 id="ticket_found" hidden>null</h1>
-      <h1 id="contact_name" hidden>null</h1>
-      <button id="ticketCopy" hidden>Ticket To Clipboard</button>
-      <button id="nameCopy" hidden>Name To Clipboard</button>
-      <button id="manageTicket" hidden>Manage Ticket</button>
-      <button id="clearSides">Clear Sidebar</button>
-      <button id="atlasAdmin" hidden>Atlas Admin</button>
-      <button id="searchProactive" hidden>Search PROACTIVE</button>
-      <button id="atlasLogs" hidden>Log Requests</button>
-      <script src="popup.js"></script>
-    </body>
-  </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Exceller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hidden Headings -->
+    <h1 id="ticket_found" class="hidden"></h1>
+    <h1 id="contact_name" class="hidden"></h1>
+    
+    <!-- Buttons -->
+    <button id="ticketCopy" class="hidden">Ticket To Clipboard</button>
+    <button id="nameCopy" class="hidden">Name To Clipboard</button>
+    <button id="manageTicket" class="hidden">Manage Ticket</button>
+    <button id="clearSides">Clear Sidebar</button>
+    <button id="atlasAdmin" class="hidden">Atlas Admin</button>
+    <button id="atlasLogs" class="hidden">Log Requests</button>
+    <button id="searchProactive" class="hidden">Search PROACTIVE</button>
+    
+    <!-- JavaScript -->
+    <script src="popup.js"></script>
+</body>
+</html>

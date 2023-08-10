@@ -61,15 +61,15 @@ function callbackSF(injectionResults) {
     } else {
         if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
             ticket_found.innerHTML = ticketNum;
-            ticket_found.removeAttribute("hidden");
-            ticketCopy.removeAttribute("hidden");
-            manageTicket.removeAttribute("hidden");
+            showElement(ticket_found);
+            showElement(ticketCopy);
+            showElement(manageTicket);
         };
         if ((contactName.length > 0)) {
             if (contactName != "none found") {
                 contact_name.innerHTML = contactName;
-                contact_name.removeAttribute("hidden");
-                nameCopy.removeAttribute("hidden");
+                showElement(contact_name);
+                showElement(nameCopy);
             };
         };
     }; // else
@@ -84,9 +84,9 @@ function callbackHelp(injectionResults) {
     } else {
         if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
             ticket_found.innerHTML = ticketNum;
-            ticket_found.removeAttribute("hidden");
-            ticketCopy.removeAttribute("hidden");
-            manageTicket.removeAttribute("hidden");
+            showElement(ticket_found);
+            showElement(ticketCopy);
+            showElement(manageTicket);
         };
     }; // else
 };
@@ -101,25 +101,25 @@ function callbackHub(injectionResults) {
     } else {
         if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
             ticket_found.innerHTML = ticketNum;
-            ticket_found.removeAttribute("hidden");
-            ticketCopy.removeAttribute("hidden");
-            manageTicket.removeAttribute("hidden");
+            showElement(ticket_found);
+            showElement(ticketCopy);
+            showElement(manageTicket);
         };
         if (contactName.length > 0) {
             contact_name.innerHTML = contactName;
-            contact_name.removeAttribute("hidden");
-            nameCopy.removeAttribute("hidden");
+            showElement(contact_name);
+            showElement(nameCopy);
         };
         if (cloudLink.length > 0) {
             try {
                 new URL(cloudLink);
-                atlasAdmin.removeAttribute("hidden");
+                showElement(atlasAdmin);
                 atlasAdmin.innerText = "Atlas Project";
                 atlasAdmin.onclick = function() {
                     window.open(cloudLink, '_blank');
                 };
             } catch (e) {
-                atlasAdmin.style.display = "none";
+                hideElement(atlasAdmin);
             };
         };
     }; // else
@@ -141,15 +141,14 @@ function callbackAtlas(injectionResults) {
             if (isAdmin === false && project != 'none') {
                 ticket_found.innerHTML = project;
                 ticketCopy.innerText = "Project To Clipboard";
-                ticketCopy.removeAttribute("hidden");
+                showElement(ticketCopy);
                 ticketCopy.onclick = function() {
                     navigator.clipboard.writeText(project);
                 };
-                atlasAdmin.removeAttribute("hidden");
+                showElement(atlasAdmin);
                 atlasAdmin.onclick = function() {
                     if (project != "null") {
                         destinationURL = destinationURL + "?search=" + project + "&operator=AND";
-
                     }
                     window.open(destinationURL,'_blank');
                 };
@@ -157,7 +156,7 @@ function callbackAtlas(injectionResults) {
                 getTabURL().then((link) => {
                     const parsedURL = new URL(link);
                     if (parsedURL.hash.split('/')[2] != "logRequestHistory")
-                        atlasLogs.removeAttribute("hidden");
+                        showElement(atlasLogs);
                 });
 
                 atlasLogs.onclick = function() {
@@ -167,14 +166,14 @@ function callbackAtlas(injectionResults) {
                     };
                 }
 
-                searchProactive.removeAttribute("hidden");
+                showElement(searchProactive);
                 searchProactive.onclick = function() {
                     destinationURL = "https://jira.mongodb.org/issues/?jql=text%20~%20%22" + project + "%22%20and%20project%20%3D%20PROACTIVE%20order%20by%20created"
                     window.open(destinationURL,'_blank');
                 };
         
             } else if (isAdmin === true) {
-                atlasAdmin.removeAttribute("hidden");
+                showElement(atlasAdmin);
                 atlasAdmin.innerText = "Atlas Project";
                 atlasAdmin.onclick = function() {
                     if (project != "null") {
@@ -354,3 +353,12 @@ clearSides.onclick = function(element) {
             document.body.appendChild(resEl);
         });
 }; 
+
+function showElement(element) {
+    element.classList.remove("hidden");
+}
+
+function hideElement(element) {
+    element.classList.add("hidden");
+}
+
