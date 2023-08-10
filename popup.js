@@ -188,19 +188,20 @@ function callbackAtlas(injectionResults) {
 
     
 function setContext(url) {
-    var c = null;
-    if (url.includes("jira.mongodb.org/browse/HELP")) {
-        c = contextType.Help;
-    } else if (url.includes("mongodb.lightning.force.com")) {
-        c = contextType.SalesForce;
-    } else if (url.includes("hub.corp.mongodb.com")) {
-        c = contextType.Hub;
-    } else if (url.includes("cloud.mongodb.com")) {
-        c = contextType.Atlas;
-    } else 
-        c = contextType.Default;
-    
-    return c;
+    const contextMapping = {
+        "jira.mongodb.org/browse/HELP": contextType.Help,
+        "mongodb.lightning.force.com": contextType.SalesForce,
+        "hub.corp.mongodb.com": contextType.Hub,
+        "cloud.mongodb.com": contextType.Atlas
+    };
+
+    for (let key in contextMapping) {
+        if (url.includes(key)) {
+            return contextMapping[key];
+        }
+    };
+
+    return contextType.Default;
 };
 
 const funcToInjectHelp = function() {
