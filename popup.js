@@ -95,6 +95,7 @@ function callbackHub(injectionResults) {
     const contactName = injectionResults[0].result["contactName"];
     const ticketNum = injectionResults[0].result["ticketNum"];
     const cloudLink = injectionResults[0].result["cloudLink"];
+    console.log(cloudLink);
     if (chrome.runtime.lastError) {
         /* Report any error */
         alert('ERROR:\n' + chrome.runtime.lastError.message);
@@ -295,7 +296,13 @@ const funcToInjectHub = function() {
     element = window.document.querySelector("#__next > div > section.main-section > section > div > div.page-overview-container.case-body > div.page-overview-sidebar > div:nth-child(4) > div > div.tip-card-content-container > div > div > div:nth-child(2) > a");
     if (element) {
         cloudLink = element.href;
-    } else cloudLink = "none";
+    } else {
+        element = window.document.querySelector("#__next > div > section.main-section > section > div > div.page-overview-container.case-body > div.page-overview-sidebar > div:nth-child(5) > div > div.tip-card-content-container > div > div > div:nth-child(2) > a");
+        if (element) {
+            cloudLink = element.href;
+        } else
+            cloudLink = "none";
+    };
 
     return { 'ticketNum': ticketNum, 'contactName': contactName, 'cloudLink': cloudLink };
 };
