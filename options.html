@@ -1,20 +1,21 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Test Extension Options</title>
+    <link rel="stylesheet" href="options.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   </head>
   <body>
-    <select id="color">
-      <option value="red">red</option>
-      <option value="green">green</option>
-      <option value="blue">blue</option>
-      <option value="yellow">yellow</option>
-    </select>
-
-    <label>
-      <input type="checkbox" id="like" />
-      I like colors.
-    </label>
+    <label for="name">Home Atlas Project Id (24 characters)</label>
+    <input type="text" id="name" name="name" required minlength="24" maxlength="24" size="24" />
 
     <div id="status"></div>
     <button id="save">Save</button>
