@@ -1,13 +1,6 @@
 const nativeMessagingHost = 'com.villainsoftware.support_ex_caller';
 
-const contextType = {
-    Help: "help",
-    Hub: "hub",
-    SalesForce: "sf",
-    Atlas: "atlas",
-    Default: "none"
-};
-
+var HOME_PROJECT = '5f1104a1b5dc041e9afdd63b';
 
 const getTabURL = async ()=> {
     const tabs = await chrome.tabs.query({active: true, currentWindow: true});
@@ -49,6 +42,15 @@ getTabURL().then((link) => {
         );
     });
 });
+
+const contextType = {
+    Help: "help",
+    Hub: "hub",
+    SalesForce: "sf",
+    Atlas: "atlas",
+    Default: "none"
+};
+
 
 const callbackSF = function(injectionResults) {
     // for (const frameResult of injectionResults)
@@ -186,7 +188,7 @@ const callbackAtlas = function(injectionResults) {
 
             } else if (isAdmin === true) {
                 showElement(atlasAdmin);
-                atlasAdmin.innerText = "Atlas Project";
+                atlasAdmin.innerText = "Back to Atlas Project";
                 atlasAdmin.onclick = function() {
                     if (project != "null") {
                         destinationURL = baseURL + '/' + project + "#/deployment";
@@ -194,6 +196,18 @@ const callbackAtlas = function(injectionResults) {
                     };
                 };
             };
+
+            chrome.storage.sync.get('homeProject', function(data) {
+                const HOME_PROJECT = data.homeProject;
+                console.log("Project retrieved from storage: " + HOME_PROJECT);
+                atlasHome.onclick = function() {
+                    const destinationURL = "https://cloud.mongodb.com/v2/" + HOME_PROJECT + "#/clusters";
+                    window.open(destinationURL,'_blank');
+                };
+                if(project != HOME_PROJECT) {
+                    showElement(atlasHome);
+                };
+            });
         };
         showElement(askHelp);
         askHelp.onclick = function() {
@@ -379,6 +393,8 @@ clearSides.onclick = function(element) {
             // document.body.appendChild(resEl);
         });
 };
+
+
 
 const showElement = function(element) {
     element.classList.remove("hidden");

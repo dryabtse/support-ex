@@ -1,17 +1,16 @@
 // Saves options to chrome.storage
 const saveOptions = () => {
-    const color = document.getElementById('color').value;
-    const likesColor = document.getElementById('like').checked;
+    const project = document.getElementById('project').value;
   
     chrome.storage.sync.set(
-      { favoriteColor: color, likesColor: likesColor },
+      {  homeProject: project },
       () => {
         // Update status to let user know options were saved.
         const status = document.getElementById('status');
         status.textContent = 'Options saved.';
         setTimeout(() => {
           status.textContent = '';
-        }, 750);
+        }, 1750);
       }
     );
   };
@@ -20,10 +19,8 @@ const saveOptions = () => {
   // stored in chrome.storage.
   const restoreOptions = () => {
     chrome.storage.sync.get(
-      { favoriteColor: 'red', likesColor: true },
       (items) => {
-        document.getElementById('color').value = items.favoriteColor;
-        document.getElementById('like').checked = items.likesColor;
+        document.getElementById('project').value = items.homeProject;
       }
     );
   };
