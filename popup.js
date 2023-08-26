@@ -1,11 +1,12 @@
 const nativeMessagingHost = 'com.villainsoftware.support_ex_caller';
 
-var HOME_PROJECT = '5f1104a1b5dc041e9afdd63b';
-
 const getTabURL = async ()=> {
     const tabs = await chrome.tabs.query({active: true, currentWindow: true});
     return tabs[0].url;
 };
+
+
+// This is the main method
 
 getTabURL().then((link) => {
     const context = setContext(link);
@@ -200,12 +201,14 @@ const callbackAtlas = function(injectionResults) {
             chrome.storage.sync.get('homeProject', function(data) {
                 const HOME_PROJECT = data.homeProject;
                 console.log("Project retrieved from storage: " + HOME_PROJECT);
-                atlasHome.onclick = function() {
-                    const destinationURL = "https://cloud.mongodb.com/v2/" + HOME_PROJECT + "#/clusters";
-                    window.open(destinationURL,'_blank');
-                };
-                if(project != HOME_PROJECT) {
-                    showElement(atlasHome);
+                if (HOME_PROJECT) {
+                    atlasHome.onclick = function() {
+                        const destinationURL = "https://cloud.mongodb.com/v2/" + HOME_PROJECT + "#/clusters";
+                        window.open(destinationURL,'_blank');
+                    };
+                    if(project != HOME_PROJECT) {
+                        showElement(atlasHome);
+                    };
                 };
             });
         };
@@ -381,6 +384,7 @@ manageTicket.onclick = function(element) {
             // resEl.innerHTML = JSON.stringify(response);
             // document.body.appendChild(resEl);
         });
+    hideElement(manageTicket);
 };
 
 clearSides.onclick = function(element) {
@@ -392,16 +396,17 @@ clearSides.onclick = function(element) {
             // resEl.innerHTML = JSON.stringify(response);
             // document.body.appendChild(resEl);
         });
+    hideElement(clearSides);
 };
-
-
 
 const showElement = function(element) {
     element.classList.remove("hidden");
 }
 
 const hideElement = function(element) {
-    element.classList.add("hidden");
+    // element.classList.add("fade-out");
+    // element.classList.add("hidden");
+    element.classList.add('collapse-out');
 }
 
 // This function toggles the "show" class for the ticket_found element

@@ -99,3 +99,32 @@ body {
     animation: fadeInSlide 2s forwards;
 }
 
+.fade-out {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;  /* ensures that the animation's final state is retained */
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.collapse-out {
+    animation-name: collapseOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+@keyframes collapseOut {
+    to {
+        opacity: 0;
+        height: 0;
+        margin: 0;
+        padding: 0;
+        display: none;
+    }
+}
