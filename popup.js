@@ -325,7 +325,7 @@ const funcToInjectHub = function() {
         contactName = element.innerHTML;
     } else contactName = "none found";
 
-    element = window.document.querySelector("#__next > div > section.main-section > section > div > div.page-overview-container.case-body > div.page-overview-sidebar > div:nth-child(4) > div > div.tip-card-content-container > div > div > div:nth-child(2) > a");
+    element = window.document.querySelector("#__next > div > section.main-section > section > div > div.page-overview-container.case-body > div.page-overview-sidebar > div:nth-child(4) > div > div.tip-card-content-container > div > div > div:nth-child(2) > p:nth-child(2) > a")
     if (element) {
         cloudLink = element.href;
     } else {
