@@ -15,8 +15,12 @@ getTabURL().then((link) => {
 
     switch(context) {
         case contextType.Help:
-            funcToInject = funcToInjectHelp;
+            funcToInject = funcToInjectJira;
             callback = callbackHelp;
+            break;
+        case contextType.Jira:
+            funcToInject = funcToInjectJira;
+            callback = callbackJira;
             break;
         case contextType.Hub:
             funcToInject = funcToInjectHub;
@@ -46,6 +50,7 @@ getTabURL().then((link) => {
 
 const contextType = {
     Help: "help",
+    Jira: "jira",
     Hub: "hub",
     SalesForce: "sf",
     Atlas: "atlas",
@@ -95,6 +100,21 @@ const callbackHelp = function(injectionResults) {
             showElement(ticket_found);
             showElement(ticketCopy);
             showElement(manageTicket);
+        };
+    }; // else
+};
+
+const callbackJira = function(injectionResults) {
+    const ticketNum = injectionResults[0].result["ticketNum"];
+
+    if (chrome.runtime.lastError) {
+        /* Report any error */
+        alert('ERROR:\n' + chrome.runtime.lastError.message);
+    } else {
+        if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
+            ticket_found.innerHTML = ticketNum;
+            showElement(ticket_found);
+            showElement(ticketCopy);
         };
     }; // else
 };
@@ -224,6 +244,7 @@ const callbackAtlas = function(injectionResults) {
 const setContext = function(url) {
     const contextMapping = {
         "jira.mongodb.org/browse/HELP": contextType.Help,
+        "jira.mongodb.org/browse/": contextType.Jira,
         "mongodb.lightning.force.com": contextType.SalesForce,
         "hub.corp.mongodb.com": contextType.Hub,
         "cloud.mongodb.com": contextType.Atlas
@@ -238,7 +259,7 @@ const setContext = function(url) {
     return contextType.Default;
 };
 
-const funcToInjectHelp = function() {
+const funcToInjectJira = function() {
     const getCurrentURL = function() {
         return window.location.href
     };
