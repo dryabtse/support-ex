@@ -340,8 +340,8 @@ const funcToInjectHub = function() {
 
     ticketNum = link.pathname.split("/")[2];
     console.log("Ticket found: " + ticketNum);
-    element = window.document.querySelector("#case-header > div > div > div.case-header-bottom-div > div.case-header-fields-section > div:nth-child(2) > div > div:nth-child(3) > a > span");
 
+    element = window.document.querySelector("#case-header > div > div > div.case-header-bottom-div > div.case-header-fields-section > div:nth-child(2) > div > div:nth-child(3) > p > a");
     if (element) {
         contactName = element.innerHTML;
     } else contactName = "none found";
