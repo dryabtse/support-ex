@@ -395,6 +395,11 @@ nameCopy.onclick = function(element) {
     toggleContactPulse();
 };
 
+knowledgeSearch.onclick = function() {
+    const destinationURL = "https://search.corp.mongodb.com/#sort=relevancy";
+    window.open(destinationURL, '_blank');
+};
+
 manageTicket.onclick = function(element) {
     const ticketNum = ticket_found.innerHTML;
     chrome.runtime.sendNativeMessage(nativeMessagingHost,
