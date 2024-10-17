@@ -1,0 +1,11 @@
+// This file should be put under ~/Library/Application\ Support/Google/Chrome/NativeMessagingHosts/
+{
+  "name": "com.villainsoftware.support_ex_caller",
+  "description": "Support Extension App Caller",
+  "path": "/Users/dmitry.ryabtsev/Documents/Tools/support-ex/messaging_host/dist/support-ex-app-caller/support-ex-app-caller",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://neeligkkdkdppicchmhhcnfbkanikolo/"
+  ],
+  "external_message_host": "/usr/bin/python3"
+}

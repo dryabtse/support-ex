@@ -405,6 +405,10 @@ manageTicket.onclick = function(element) {
     chrome.runtime.sendNativeMessage(nativeMessagingHost,
         { "ticketNum": ticketNum },
         function(response) {
+	    if (chrome.runtime.lastError) {
+                console.error("Error: " + chrome.runtime.lastError.message);
+                return;
+            };
             console.log("Received " + JSON.stringify(response));
             // var resEl = document.createElement("p");
             // resEl.innerHTML = JSON.stringify(response);

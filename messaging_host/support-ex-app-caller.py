@@ -1,4 +1,4 @@
-#!/usr/local/bin/python3
+#!/usr/bin/python3
 
 import struct
 import sys
@@ -85,6 +85,7 @@ def read_thread_func(queue):
 
 def Main():
   try:
+    logger('\nApp starting')
     read_thread_func(None)
 
     queue = Queue.Queue()
