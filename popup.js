@@ -396,7 +396,7 @@ nameCopy.onclick = function(element) {
 };
 
 knowledgeSearch.onclick = function() {
-    const destinationURL = "https://search.corp.mongodb.com/#sort=relevancy";
+    const destinationURL = "https://knowledge.corp.mongodb.com/";
     window.open(destinationURL, '_blank');
 };
 
