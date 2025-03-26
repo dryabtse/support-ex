@@ -67,9 +67,15 @@ const callbackSF = function(injectionResults) {
         /* Report any error */
         alert('ERROR:\n' + chrome.runtime.lastError.message);
     } else {
-        if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string')) {
+        if ((ticketNum.length > 0) && (typeof(ticketNum[0]) === 'string') && (ticketNum != 'none found')) {
             ticket_found.innerHTML = ticketNum;
             showElement(ticket_found);
+	    showElement(openInCustomerHub);
+            openInCustomerHub.onclick = function() {
+                const destinationURL = "https://hub.corp.mongodb.com/case/" + ticketNum;
+                window.open(destinationURL, '_blank');
+            };
+	    
             showElement(ticketCopy);
             showElement(manageTicket);
         };
@@ -123,6 +129,7 @@ const callbackHub = function(injectionResults) {
     const contactName = injectionResults[0].result["contactName"];
     const ticketNum = injectionResults[0].result["ticketNum"];
     const cloudLink = injectionResults[0].result["cloudLink"];
+    const sfscLink = injectionResults[0].result["sfscLink"];
     console.log(cloudLink);
     if (chrome.runtime.lastError) {
         /* Report any error */
@@ -151,6 +158,17 @@ const callbackHub = function(injectionResults) {
                 hideElement(atlasAdmin);
             };
         };
+	if (sfscLink.length > 0) {
+	   try {
+                new URL(sfscLink);
+                showElement(openInSFSC);
+                openInSFSC.onclick = function() {
+                    window.open(sfscLink, '_blank');
+                };
+            } catch (e) {
+                hideElement(openInSFSC);
+            };
+	};
         showElement(askHelp);
         askHelp.onclick = function() {
             const destinationURL = "https://jira.mongodb.org/plugins/servlet/desk/portal/13";
@@ -277,12 +295,12 @@ const funcToInjectSF = function() {
     var contactName = "";
     var element = null;
 
-    element = window.document.querySelector("body > div.desktop.container.forceStyle.oneOne.navexDesktopLayoutContainer.lafAppLayoutHost.forceAccess.tablet > div.viewport > section > div.navexWorkspaceManager > div > div.tabsetHeader.slds-context-bar.slds-context-bar--tabs.slds-no-print > div.slds-context-bar__secondary.navCenter.tabBarContainer > div > div > ul.tabBarItems.slds-grid > li.oneConsoleTabItem.tabItem.slds-context-bar__item.slds-context-bar__item_tab.slds-is-active.active.hasActions.hideAnimation.navexConsoleTabItem > a > span.title.slds-truncate");
+    element = window.document.querySelector("#brandBand_2 > div > div > div > one-record-home-flexipage2 > forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-cases_-l-w-c___-case___-v-i-e-w___-l-m-t___1712090528000 > forcegenerated-flexipage_cases_lwc_case__view_js > record_flexipage-desktop-record-page-decorator > div.record-page-decorator > records-record-layout-event-broker > slot > slot > flexipage-record-home-template-desktop2 > div > div.slds-col.slds-size_1-of-1.row.region-header > slot > flexipage-component2:nth-child(2) > slot > c-cc-highlights-panel > div.header-pin-wrapper > div > div.slds-page-header__row.slds-page-header__row_gutters > div > ul > li.slds-page-header__detail-block.slds-p-right_small.slds-p-top_medium > div > table > tbody > tr > td:nth-child(1) > div:nth-child(2) > a");
     if (element) {
         ticketNum = element.innerHTML.split(":")[0].split('|')[0].trim();
     } else ticketNum = "none found";
 
-    element = window.document.querySelector("#brandBand_2 > div > div > one-record-home-flexipage2 > forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-cases_-l-w-c___-case___-v-i-e-w > forcegenerated-flexipage_cases_lwc_case__view_js > record_flexipage-record-page-decorator > div.record-page-decorator > records-record-layout-event-broker > slot > slot > flexipage-record-home-template-desktop2 > div > div.slds-col.slds-size_1-of-1.row.region-header > slot > flexipage-component2:nth-child(2) > slot > c-cc-highlights-panel > div.header-pin-wrapper > div > div.slds-page-header__row.slds-page-header__row_gutters > div > ul > li:nth-child(4) > div:nth-child(2) > a");
+    element = window.document.querySelector("#brandBand_2 > div > div > div > one-record-home-flexipage2 > forcegenerated-adg-rollup_component___force-generated__flexipage_-record-page___-cases_-l-w-c___-case___-v-i-e-w___-l-m-t___1712090528000 > forcegenerated-flexipage_cases_lwc_case__view_js > record_flexipage-desktop-record-page-decorator > div.record-page-decorator > records-record-layout-event-broker > slot > slot > flexipage-record-home-template-desktop2 > div > div.slds-col.slds-size_1-of-1.row.region-header > slot > flexipage-component2:nth-child(2) > slot > c-cc-highlights-panel > div.header-pin-wrapper > div > div.slds-page-header__row.slds-page-header__row_gutters > div > ul > li:nth-child(4) > div:nth-child(2) > a");
 
     if (element) {
         contactName = element.innerHTML;
@@ -330,6 +348,8 @@ const funcToInjectAtlas = function() {
 const funcToInjectHub = function() {
     var ticketNum = "";
     var element = null;
+    var cloudLink = "";
+    var sfscLink = "";
     var contactName = "";
 
     const getCurrentURL = function() {
@@ -351,13 +371,15 @@ const funcToInjectHub = function() {
         cloudLink = element.href;
     } else {
         element = window.document.querySelector("#__next > div > section.main-section > section > div > div.page-overview-container.case-body > div.page-overview-sidebar > div:nth-child(5) > div > div.tip-card-content-container > div > div > div:nth-child(2) > a");
-        if (element) {
+        if (element) 
             cloudLink = element.href;
-        } else
-            cloudLink = "none";
     };
 
-    return { 'ticketNum': ticketNum, 'contactName': contactName, 'cloudLink': cloudLink };
+    element = window.document.querySelector("#case-header > div > div > div.page-title > div.view-sfsc-config-btn-case > a");
+    if (element) 
+        sfscLink = element.href;
+
+    return { 'ticketNum': ticketNum, 'contactName': contactName, 'cloudLink': cloudLink, 'sfscLink': sfscLink };
 };
 
 const clipCopy = function(elementId) {
